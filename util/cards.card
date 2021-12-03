@@ -1,0 +1,13 @@
+
+"Twin Swords"
+.damage : 10
+.shield : 1
+.color : "red"
+
+"Sheild"
+.damage : 5
+.shield : 10
+.color :"red"
+
+"Horse"
+.speed : 1
