@@ -1,13 +1,28 @@
+param type
 
-"Twin Swords"
+"Twin Swords",fighter
 .damage : 10
-.shield : 1
-.color : "red"
-
-"Sheild"
-.damage : 5
-.shield : 10
+.defence : 2
 .color :"red"
 
-"Horse"
+"Shield",fighter
+.damage : 5
+.defence : 10
+.color :"red"
+
+"Horse",runner
 .speed : 1
+.color :"yellow"
+
+"Wagon",carrier
+.carry : 5
+.color :"brown"
+
+"Sword",fighter
+.damage : 5
+.defence : 1
+.color :"red"
+
+"Train",runner
+.speed : 3
+.color : "yellow"
