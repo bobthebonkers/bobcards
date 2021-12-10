@@ -4,11 +4,13 @@ param type
 .damage : 10
 .defence : 2
 .color :"red"
+.hands : 2
 
 "Shield",fighter
 .damage : 5
 .defence : 10
 .color :"red"
+.hands : 1
 
 "Horse",runner
 .speed : 1
@@ -22,7 +24,43 @@ param type
 .damage : 5
 .defence : 1
 .color :"red"
+.hands : 1
 
 "Train",runner
 .speed : 3
 .color : "yellow"
+
+"Bow",hunting
+.damage : 5
+.acc : 15
+.A_S :"1_turn"
+.keepshot :"FALSE"
+
+"CrossBow",hunting
+.damage 10
+.acc : 20
+.A_S : "3_turns"
+.keepshot : "TRUE"
+
+"Carrage",carrier
+.carry : 10
+
+
+"Harpoon",Fishing
+.FPS :"1-2"
+.durabilaty : 5
+
+
+"Trident",Fishing
+.FPS :"2-6"
+.durabilaty :10
+
+"Fishing_Rod",Fishing
+.FPS :1
+.durabilaty : "infinate"
+
+"Coin",money
+.value :"£1"
+
+"Cash"
+.value :"£5"
