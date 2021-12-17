@@ -37,7 +37,7 @@ param type
 .keepshot :"FALSE"
 
 "CrossBow",hunting
-.damage 10
+.damage : 10
 .acc : 20
 .A_S : "3_turns"
 .keepshot : "TRUE"
@@ -59,8 +59,40 @@ param type
 .FPS :1
 .durabilaty : "infinate"
 
-"Coin",money
+"Coin",Money
 .value :"£1"
 
-"Cash"
+"Cash",Money
 .value :"£5"
+
+"Gold Bar",Money
+.value : "£10"
+
+"Diamond",Money
+.value : "£50"
+
+"Emrald",Money
+.value : "£100"
+
+"Tresure",Money
+.value : "£150"
+
+"Apple",Food
+.restore : 5_health_points
+.defamish : 10_hunger_points
+
+"Bread",Food
+.restore : 15_health_points
+.defamish : 25_hunger_points
+
+"Sandwidge"Food
+.restore : 20_health_points
+.defamish : 45_hunger_points
+
+"Meat",Food
+.restore : 40_health_points
+.defamish : 35_hunger_points
+
+"Pack_lunch",Food
+.restore : 50
+.defamish : 50
