@@ -1,11 +1,20 @@
 
+{{- global color -}}
+  {{-switch $0 -}}
+    {{- case "Fighter"}}red
+    {{- case "Food"}}green
+    {{- case "Fishing"}}blue
+    {{- case <v>}}gray
+  {{- /switch -}}
+{{- /global -}}
+
 {{let cds = r_card (file "util/cards.card")}}
 
 {{for i cd in $cds}}
   {{let x = mul (mod $i 4) 100}}
 	{{let y = mul (div $i 4) 200}}
 	<g transform = "translate({{$x}} {{$y}})">
-		<rect {{xywh 0 0 100 200 "px"}} fill="{{first $cd.color "grey"}}" stroke="black" stroke-width="3px"/>
+		<rect {{xywh 0 0 100 200 "px"}} fill="{{color $cd.type}}" stroke="black" stroke-width="3px"/>
 		<text {{xy 50 40 "px"}} fill="black" text-anchor="middle">{{$cd.Name}}</text>
 		{{if $cd.damage}}
 			<text {{xy 10 190 "px"}} fill="black" text-anchor="left">Damage = {{$cd.damage}}</text>

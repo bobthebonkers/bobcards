@@ -1,34 +1,28 @@
 param type
 
-"Twin Swords",fighter
+"Twin Swords",Fighter
 .damage : 10
 .defence : 2
-.color :"red"
 .hands : 2
 
-"Shield",fighter
+"Shield",Fighter
 .damage : 5
 .defence : 10
-.color :"red"
-.hands : 1
+.hands : 0
 
 "Horse",runner
 .speed : 1
-.color :"yellow"
 
 "Wagon",carrier
 .carry : 5
-.color :"brown"
 
-"Sword",fighter
+"Sword",Fighter
 .damage : 5
 .defence : 1
-.color :"red"
 .hands : 1
 
 "Train",runner
 .speed : 3
-.color : "yellow"
 
 "Bow",hunting
 .damage : 5
@@ -71,28 +65,38 @@ param type
 "Diamond",Money
 .value : "£50"
 
-"Emrald",Money
+"Emerald",Money
 .value : "£100"
 
 "Tresure",Money
 .value : "£150"
 
 "Apple",Food
-.restore : 5_health_points
-.defamish : 10_hunger_points
+.restore : 5
+.defamish : 10
+
 
 "Bread",Food
-.restore : 15_health_points
-.defamish : 25_hunger_points
+.restore : 15
+.defamish : 25
 
-"Sandwidge"Food
-.restore : 20_health_points
-.defamish : 45_hunger_points
+"Sandwidge",Food
+.restore : 20
+.defamish : 45
 
 "Meat",Food
-.restore : 40_health_points
-.defamish : 35_hunger_points
+.restore : 40
+.defamish : 35
 
 "Pack_lunch",Food
 .restore : 50
 .defamish : 50
+
+"Burito",Food
+.restore : 150
+.defamish : 100
+
+"Twin Shields",Fighter
+.damage : 10
+.defence : 20
+.hands : 0
